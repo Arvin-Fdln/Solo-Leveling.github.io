@@ -1,0 +1,119 @@
+.chapter-navigation {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0; /* Add margin for spacing */
+    padding: 5px 10px;
+}
+
+.nav-button {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding for buttons */
+    border: 2px solid #9281E2; /* Border for buttons */
+    border-radius: 5px; /* Rounded corners */
+    color: #9281E2; /* Text color */
+    background-color: white; /* Background color */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect */
+    margin: 0 10px; /* Add margin between buttons */
+}
+
+/* Hide buttons by default */
+.nav-button.hidden {
+    display: none; /* Hide button */
+}
+
+/* Change button appearance on hover */
+.nav-button:hover {
+    background-color: #9281E2; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* for button to scroll to top */
+.scroll-to-top-button {
+    position: fixed; /* Fixed positioning to stay in place */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    padding: 10px 15px; /* Padding for the button */
+    border: 2px solid #9281E2; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    background: rgb(6,0,75);
+    background: linear-gradient(139deg, rgba(6,0,75,0.978203781512605) 0%, rgba(81,81,170,1) 54%, rgba(68,101,230,1) 100%);    
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+    z-index: 1000;
+}
+body{
+    background-color: #d6d5e9;
+}
+
+.scroll-to-top-button:hover {
+    box-shadow: 0 0 15px rgba(68, 101, 230, 0.8), 0 0 30px rgba(68, 101, 230, 0.5);    
+    color: white; /* Change text color on hover */
+}
+
+.scroll-to-top-button:not(:hover){
+    box-shadow: none;
+    transition: box-shadow 0.5s ease; /* Transition back to no glow */
+
+}
+
+
+.chapter-name h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: georgia;
+    font-variant-numeric: lining-nums;
+}
+
+.chapter-images {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    justify-content: center; /* Center images vertically if needed */
+    padding: 0;
+    max-width: 800px; /* Set a maximum width for the images' container */
+    margin: 0 auto; /* Center the container itself */
+    margin-bottom: 20px;
+}
+
+.chapter-images ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; /* Remove margin from the list */
+    display: flex; /* Use flexbox for the list */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.chapter-images li {
+    margin: 0; /* No margin between images */
+    text-align: center;
+}
+
+.chapter-images img {
+    max-width: 300px; /* Ensure images don't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are block elements */
+    text-align: center;
+}
+
+/* Media query for mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .chapter-images img {
+        width: 80%; /* Resize images to take up 80% of the screen width */
+    }
+}
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .chapter-images img {
+        width: 90%; /* Resize images to take up 90% of the screen width */
+    }
+}
+
+/* Media query for larger screens (laptops and desktops) */
+@media (min-width: 769px) {
+    .chapter-images {
+        width: 50%; /* Images take up 50% of the screen on larger devices */
+    }
+}
