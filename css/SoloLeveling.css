@@ -529,6 +529,15 @@
         }
     }
 
+    @media (max-width: 600px) {
+        .header {
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
     @media (max-width: 517px) {
         .auth-button a {
             padding: 0;
