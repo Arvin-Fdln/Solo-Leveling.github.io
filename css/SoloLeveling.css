@@ -24,7 +24,10 @@
       }
     
       .header {
-        background-image: url(/images/Header.jpg) no-repeat center center;
+        background-image: url(/images/Header.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         position: relative;
         height: 300px;
         width: 100%;
