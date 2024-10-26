@@ -21,17 +21,20 @@ body {
   }
 
   .header {
-    background: url(/images/Header.jpg) no-repeat center center;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+        background-image: url(../images/Header.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
 
 .header::before {
     content: "";
