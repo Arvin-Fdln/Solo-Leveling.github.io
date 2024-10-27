@@ -549,27 +549,6 @@
         }
     }
 
-    @media (max-width: 500px) {
-        .intro h1 {
-            font-size: 3.5vh;
-            padding: 5px;
-            text-align: center;
-            margin: 10px;
-        }
-
-        .intro p {
-            font-size: 3.5vh;
-        }
-
-        .read-now-button {
-            font-size: 3vh;
-        }
-
-        nav.main-nav ul li{
-            font-size: smaller;
-            padding: 0;
-        }
-    }
 
     @media (max-width: 450px) {
         nav.main-nav {
