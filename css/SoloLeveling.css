@@ -515,11 +515,11 @@
 
     @media (max-width: 660px) and (max-height: 1300px) {
         .intro h1 {
-            font-size: 4vh;
+            font-size: initial;
         }
 
         .intro p {
-            font-size: 4vh;
+            font-size: initial;
         }
     }
     
