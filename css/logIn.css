@@ -206,3 +206,11 @@ nav.main-nav ul li a:hover {
 :target {
     display: flex;
 }
+
+
+    @media (max-width: 392px) {
+        .login-box {
+            width: initial;
+        }
+
+    }
